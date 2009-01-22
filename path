@@ -1,0 +1,2 @@
+export M2_HOME=/home/fs111/tools/maven
+export PATH=$PATH:/$M2_HOME/bin
