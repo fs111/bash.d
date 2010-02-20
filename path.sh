@@ -5,4 +5,4 @@ export JVM_ROOT=/usr/lib/jvm
 export JAVA_HOME=$JVM_ROOT/java
 
 export JRUBY_HOME=/home/fs111/tools/jruby
-export PATH=$PATH:$JRUBY_HOME/bin:$PWD/utils
+export PATH=$PATH:$JRUBY_HOME/bin:$HOME/.bash.d//utils
