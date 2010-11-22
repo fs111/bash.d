@@ -1,6 +1,6 @@
-export M2_HOME=/home/fs111/tools/maven
-export ANT_HOME=/home/fs111/tools/ant
-export PATH=$PATH:/$M2_HOME/bin:/home/fs111/tools/eclipse:$ANT_HOME/bin
+export M2_HOME=$HOME/tools/maven
+export ANT_HOME=$HOME/tools/ant
+export PATH=$PATH:/$M2_HOME/bin:$HOME/tools/eclipse:$ANT_HOME/bin
 
 export JVM_ROOT=/usr/lib/jvm
 export JAVA_HOME=$JVM_ROOT/java
