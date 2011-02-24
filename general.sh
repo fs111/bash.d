@@ -1,2 +1,2 @@
 # general settings for bash etc. 
-export HISTSIZE=10000
+export HISTSIZE=100000
