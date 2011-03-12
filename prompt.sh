@@ -1,4 +1,4 @@
-# User specific aliases and functions
+# based on something I found on dotfiles.com years ago
 function color_prompt
 {
     local none="\[\033[0m\]"
@@ -28,12 +28,11 @@ function color_prompt
             local u_color=$yellow
         fi
 
-    PS1="$dark_gray> $current_tty $u_color\u$dark_gray:$light_blue\w\n$dark_gray> $red\$? $cyan\t $green\! $yellow"'\$'"$none "
+    PS1="$dark_gray> $current_tty $u_color\u$dark_gray@$u_color\h$dark_gray:$light_blue\w\n$dark_gray> $red\$? $cyan\t $green\! $yellow"'\$'"$none "
 
     PS2="$dark_gray>$none "
 
 }
 
-# Actions
 color_prompt
 
