@@ -12,3 +12,6 @@ export PATH=$PATH:$ROO_HOME/bin
 
 export NODE_HOME=$HOME/opt/node/
 export PATH=$PATH:$NODE_HOME/bin
+
+export GO_HOME=$HOME/code/go
+export PATH=$GO_HOME/bin/:$PATH
