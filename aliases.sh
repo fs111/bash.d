@@ -11,11 +11,6 @@ alias jsonlint="python -m simplejson.tool"
 
 DISTRIBUTION=$(lsb_release -i | cut -d\: -f 2 | tr -d "\t")
 
-if [ $DISTRIBUTION == "Ubuntu" ]
-    then
-    unalias alert
-fi
-
 if [ $DISTRIBUTION != "Fedora" ]
 then
     alias ack=ack-grep
