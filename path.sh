@@ -14,7 +14,7 @@ export NODE_HOME=$HOME/opt/node/
 export PATH=$PATH:$NODE_HOME/bin
 
 export GO_HOME=$HOME/code/go
-export GOROOTP=$GO_HOME
+export GOROOT=$GO_HOME
 export PATH=$GO_HOME/bin/:$PATH
 
 export BITCOIN_HOME=$HOME/tools/bitcoin
