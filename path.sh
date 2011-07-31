@@ -19,3 +19,5 @@ export PATH=$GO_HOME/bin/:$PATH
 
 export BITCOIN_HOME=$HOME/tools/bitcoin
 export PATH=$PATH:$BITCOIN_HOME/bin/32
+
+export PATH=$PATH:$HOME/.rvm/bin
