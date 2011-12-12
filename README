@@ -9,3 +9,12 @@ different tools into different files and in case I do not want them any longer,
 I can just rename the file to something not ending in ".sh". Since the .bash.d
 directory is under git control, I can even use branches to try out new things
 in my environment.
+
+
+If you want to give it a try, do this:
+
+cd ~
+git clone git://github.com/fs111/bash.d.git .bash.d
+cd .bash.d
+./install
+bash
