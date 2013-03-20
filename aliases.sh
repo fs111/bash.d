@@ -8,6 +8,7 @@ alias eoip="ssh -2 -N -l fs111 -D7070 83.169.35.107 -p 443"
 alias play='mplayer -playlist <(find "$PWD" -type f -iname "*.mp3" -o -iname "*.ogg" -o -iname "*.flac" | sort -n)'
 alias jsonlint="python -m simplejson.tool"
 alias yup="yum -y"
+alias crs="kill -10 $(pidof resizR)"
 
 
 DISTRIBUTION=$(lsb_release -i | cut -d\: -f 2 | tr -d "\t")
