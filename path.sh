@@ -12,3 +12,6 @@ export GOROOT=$GO_HOME
 export PATH=$GO_HOME/bin/:$PATH
 
 export PATH=$PATH:$HOME/.rvm/bin
+
+export GRADLE_HOME=$HOME/tools/gradle
+export PATH=$GRADLE_HOME/bin:$PATH
