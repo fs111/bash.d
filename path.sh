@@ -15,3 +15,6 @@ export PATH=$PATH:$HOME/.rvm/bin
 
 export GRADLE_HOME=$HOME/tools/gradle
 export PATH=$GRADLE_HOME/bin:$PATH
+
+export HADOOP_PREFIX=$HOME/tools/hadoop
+export PATH=$PATH:$HADOOP_PREFIX/bin
