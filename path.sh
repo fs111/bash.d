@@ -16,5 +16,6 @@ export PATH=$GRADLE_HOME/bin:$PATH
 export HADOOP_PREFIX=$HOME/tools/hadoop
 export PATH=$PATH:$HADOOP_PREFIX/bin
 
-export JAVA_HOME=$HOME/tools/j7
-export PATH=$JAVA_HOME/bin:$PATH
+export IVY_HOME=$HOME/tools/ivy
+
+export JAVA_HOME=/usr/lib/jvm/java-openjdk
