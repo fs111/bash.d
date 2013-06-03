@@ -2,9 +2,6 @@ export M2_HOME=$HOME/tools/maven
 export ANT_HOME=$HOME/tools/ant
 export PATH=$PATH:/$M2_HOME/bin:$HOME/tools/eclipse:$ANT_HOME/bin
 
-export JVM_ROOT=/usr/
-export JAVA_HOME=$JVM_ROOT
-
 export PATH=$PATH:$JRUBY_HOME/bin:$HOME/.bash.d//utils
 
 export GO_HOME=$HOME/code/go
@@ -18,3 +15,6 @@ export PATH=$GRADLE_HOME/bin:$PATH
 
 export HADOOP_PREFIX=$HOME/tools/hadoop
 export PATH=$PATH:$HADOOP_PREFIX/bin
+
+export JAVA_HOME=$HOME/tools/j7
+export PATH=$JAVA_HOME/bin:$PATH
