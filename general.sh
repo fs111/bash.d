@@ -6,3 +6,4 @@ bind 'set completion-ignore-case on'
 bind 'set completion-prefix-display-length 2'
 bind 'set completion-map-case on'
 
+export EDITOR=vim
