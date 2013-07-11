@@ -18,3 +18,6 @@ then
     alias ack=ack-grep
 fi
 unset DISTRIBUTION
+
+# open door in co.up
+alias lmi="curl -s http://192.168.2.5/letmein -o /dev/null"
