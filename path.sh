@@ -17,6 +17,7 @@ export PATH=$GRADLE_HOME/bin:$PATH
 
 export HADOOP_PREFIX=$HOME/tools/hadoop
 export HADOOP_HOME=$HOME/tools/hadoop
+export HADOOP_HOME_WARN_SUPPRESS="true"
 export PATH=$PATH:$HADOOP_PREFIX/bin
 
 export IVY_HOME=$HOME/tools/ivy
