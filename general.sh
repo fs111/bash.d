@@ -6,3 +6,13 @@ bind 'set completion-ignore-case on'
 bind 'set completion-prefix-display-length 2'
 bind 'set completion-map-case on'
 
+export EDITOR=vim
+
+up() {
+    local dest=".." 
+    local limit=${1:-1} 
+    for ((i=2 ; i <= limit ; i++)); do 
+        dest=$dest/..
+    done 
+    cd $dest
+} 
