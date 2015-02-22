@@ -18,4 +18,4 @@ export PATH=$PATH:$HADOOP_PREFIX/bin
 
 export IVY_HOME=$HOME/tools/ivy
 
-export JAVA_HOME=/usr/lib/jvm/java-openjdk
+export PATH=$HOME/.local/bin:$PATH
