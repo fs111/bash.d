@@ -1,6 +1,9 @@
 # general settings for bash etc. 
-export HISTSIZE=100000
-export SAVEHIST0=100000
+export HISTSIZE=
+export HISTFILESIZE=
+export HISTTIMEFORMAT="[%F %T] "
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
 # these are readline modifications to tweak the tab completion
 bind 'set completion-ignore-case on'
 bind 'set completion-prefix-display-length 2'
