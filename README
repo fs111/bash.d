@@ -1,7 +1,7 @@
 This is my .bash.d directory. Each file ending in ".sh" will be sourced upon
 login via my bashrc file like this:
    
-    for i in $HOME/.bash.d/*.sh; do source $i; done
+    for i in $HOME/.bash.d/*.bash; do source $i; done
     unset i
 
 This gives me a pretty flexible setup, since I can separate settings for
