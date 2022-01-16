@@ -1,6 +1,6 @@
 export M2_HOME=$HOME/tools/maven
 export ANT_HOME=$HOME/tools/ant
-export PATH=$PATH:/$M2_HOME/bin:$HOME/tools/eclipse:$ANT_HOME/bin
+export PATH=$PATH:/$M2_HOME/bin::$ANT_HOME/bin
 
 export PATH=$PATH:$JRUBY_HOME/bin:$HOME/.bash.d//utils
 

@@ -3,6 +3,7 @@ export HISTSIZE=
 export HISTFILESIZE=
 export HISTTIMEFORMAT="[%F %T] "
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+export HSTR_CONFIG=hicolor
 
 # these are readline modifications to tweak the tab completion
 bind 'set completion-ignore-case on'
