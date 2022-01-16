@@ -1,0 +1,5 @@
+alias ls="ls -G"
+alias ..="cd .."
+alias ltr="ls -ltr"
+alias ll="ls -l"
+alias jsonlint="python -m json.tool"
