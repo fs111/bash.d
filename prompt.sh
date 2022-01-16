@@ -35,4 +35,3 @@ function color_prompt
 }
 
 color_prompt
-
