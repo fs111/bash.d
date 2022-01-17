@@ -10,4 +10,13 @@ then
   alias journal='mvim ~/Dropbox/journal/$(date "+%Y-%m-%d").md'
   
   export EDITOR="/Applications/MacVim.app/Contents/MacOS/Vim -v"
+
+  if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+      . /opt/local/etc/profile.d/bash_completion.sh
+  fi
+
+  if [ -f /opt/local/share/nvm/init-nvm.sh ]; then
+      . /opt/local/share/nvm/init-nvm.sh
+  fi
+
 fi

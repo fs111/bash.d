@@ -1,6 +1,6 @@
 # HSTR configuration - add this to ~/.bashrc
 alias hh=hstr                    # hh to be alias for hstr
-export HSTR_CONFIG=hicolor       # get more colors
+export HSTR_CONFIG=hicolor,regexp-match   # get more colors, regex matching
 shopt -s histappend              # append new history items to .bash_history
 export HISTCONTROL=ignorespace   # leading space hides commands from history
 export HISTFILESIZE=10000000     # increase history file size (default is 500)
@@ -12,6 +12,8 @@ if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hstr -- \C-j"'; fi
 # if this is interactive shell, then bind 'kill last command' to Ctrl-x k
 if [[ $- =~ .*i.* ]]; then bind '"\C-xk": "\C-a hstr -k \C-j"'; fi
 
+# skip history for one and two letter commands
+HISTIGNORE='?:??'
 
 # these are readline modifications to tweak the tab completion
 bind 'set completion-ignore-case on'
@@ -19,12 +21,3 @@ bind 'set completion-prefix-display-length 2'
 bind 'set completion-map-case on'
 
 export EDITOR=vim
-
-up() {
-    local dest=".." 
-    local limit=${1:-1} 
-    for ((i=2 ; i <= limit ; i++)); do 
-        dest=$dest/..
-    done 
-    cd $dest
-} 
