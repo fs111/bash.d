@@ -1,9 +1,7 @@
 This is my .bash.d directory. Each file ending in ".bash" will be sourced upon
 login via my bashrc file like this:
    
-    for i in $HOME/.bash.d/*.bash; do source $i; done
-    unset i
-
+To install this, do this:
 
 cd ~
 git clone git://github.com/fs111/bash.d.git .bash.d
