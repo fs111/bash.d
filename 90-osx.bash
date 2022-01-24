@@ -19,4 +19,6 @@ then
       . /opt/local/share/nvm/init-nvm.sh
   fi
 
+  export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
 fi
