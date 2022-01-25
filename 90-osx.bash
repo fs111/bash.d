@@ -16,7 +16,7 @@ then
   fi
 
   if [ -f /opt/local/share/nvm/init-nvm.sh ]; then
-      . /opt/local/share/nvm/init-nvm.sh
+      . /opt/local/share/nvm/init-nvm.sh --no-use
   fi
 
   export PATH=/opt/local/bin:/opt/local/sbin:$PATH
