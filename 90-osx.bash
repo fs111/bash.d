@@ -7,20 +7,13 @@ then
 
   alias mvim="/Applications/MacVim.app/Contents/MacOS/Vim -g"
   alias vim="mvim -v"
-  alias journal='mvim ~/Dropbox/journal/$(date "+%Y-%m-%d").md'
-  
   export EDITOR="/Applications/MacVim.app/Contents/MacOS/Vim -v"
 
   if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
       . /opt/local/etc/profile.d/bash_completion.sh
   fi
 
-  if [ -f /opt/local/share/nvm/init-nvm.sh ]; then
-      . /opt/local/share/nvm/init-nvm.sh --no-use
-  fi
-
   export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
   alias ls="gls --color=auto"
-
 fi
