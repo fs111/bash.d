@@ -6,3 +6,8 @@ up() {
     done 
     cd $dest
 }
+
+export FZF_DEFAULT_COMMAND="fd --type f"
+
+
+eval "$(direnv hook bash)"
