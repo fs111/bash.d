@@ -9,4 +9,8 @@ up() {
 
 export FZF_DEFAULT_COMMAND="rg --files"
 
-eval "$(direnv hook bash)"
+if ! command -v direnv &> /dev/null
+then
+    eval "$(direnv hook bash)"
+fi
+
