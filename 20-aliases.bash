@@ -1,4 +1,3 @@
-alias ls="ls -G --color=auto"
 alias ..="cd .."
 alias ltr="ls -ltr"
 alias ll="ls -l"
