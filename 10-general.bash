@@ -13,3 +13,11 @@ bind 'set completion-ignore-case on'
 bind 'set completion-prefix-display-length 2'
 bind 'set completion-map-case on'
 export EDITOR=vim
+
+# found in https://github.com/mrzool/bash-sensible/blob/master/sensible.bash
+# Prepend cd to directory names automatically
+shopt -s autocd 2> /dev/null
+# Correct spelling errors during tab-completion
+shopt -s dirspell 2> /dev/null
+# Correct spelling errors in arguments supplied to cd
+shopt -s cdspell 2> /dev/null
