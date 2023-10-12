@@ -9,4 +9,5 @@ if [ -f "/etc/debian_version" ]; then
     alias eza='exa'
 fi
 alias l="eza -l --header --git --icons"
+alias lr="l --sort=modified"
 alias e='fzf -m --bind ctrl-a:select-all,ctrl-d:deselect-all,ctrl-t:toggle-all --print0 --preview "bat --theme Dracula --color=always {}" | xargs -0 -o $EDITOR'
