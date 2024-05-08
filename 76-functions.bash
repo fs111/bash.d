@@ -11,6 +11,6 @@ function tt {
 
     for tz in ${TIME_ZONES}
     do
-        printf "%s: %s\n" "${tz}" "$(TZ="${tz}" date +%H:%M)"
+        printf "%s: %s\n" "${tz}" "$(TZ="${tz}" date +%H:%M:%S)"
     done | column -t
 }
