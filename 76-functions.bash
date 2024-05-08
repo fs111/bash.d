@@ -7,7 +7,7 @@ function sc {
 }
 
 function tt {
-    TIME_ZONES="UTC Europe/Berlin Europe/Dublin India/Hyderabad America/Los_Angeles America/New_York"
+    TIME_ZONES="UTC Europe/Berlin Europe/Dublin Asia/Kolkata America/New_York America/Chicago America/Los_Angeles"
 
     for tz in ${TIME_ZONES}
     do
