@@ -1,11 +1,3 @@
-function crt {
-  open "https://crt.sh?q=$(show-cert "$1" | jq -r .[0].Raw | base64 -d | shasum -a 256 |awk '{print $1}' )"  
-}
-
-function sc {
-    show-cert "$1" | jless
-}
-
 function tt {
     TIME_ZONES="UTC Europe/Berlin Europe/Dublin Asia/Kolkata America/New_York America/Chicago America/Los_Angeles"
 
@@ -14,3 +6,16 @@ function tt {
         printf "%s: %s\n" "${tz}" "$(TZ="${tz}" date +%H:%M:%S)"
     done | column -t
 }
+
+
+function e {
+    local dir="${1:-.}"
+    fzf -m \
+        --bind ctrl-a:select-all,ctrl-d:deselect-all,ctrl-t:toggle-all \
+        --print0 \
+        --preview "bat --theme Dracula --color=always {}" \
+        --walker-root ${dir} \
+        | xargs -0 -o $EDITOR
+
+}
+
