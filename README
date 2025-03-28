@@ -4,7 +4,7 @@ login via my bashrc file like this:
 To install this, do this:
 
 cd ~
-git clone git://github.com/fs111/bash.d.git .bash.d
+git clone https://codeberg.org/fs111/bash.d.git .bash.d
 cd .bash.d
 ./install
 bash
