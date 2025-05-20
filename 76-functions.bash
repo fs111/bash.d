@@ -22,3 +22,7 @@ function e {
 function black {
     docker run --rm --volume "$(pwd)":/src --workdir /src pyfound/black:latest_release black  "$@"
 }
+
+function drun {
+    docker run --rm -it "$@"
+}
